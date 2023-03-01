@@ -1,6 +1,6 @@
 const fname = document.querySelector('.inp1');
 const lname = document.querySelector('.inp2');
-const submit = document.getElementById('submit');
+const submit = document.querySelector('.frm');
 
 submit.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -11,9 +11,9 @@ submit.addEventListener('submit',(e)=>{
     `;
 
     Email.send({
-        SecureToken : "your-token", //add your token here
-        To : 'them@website.com', 
-        From : "you@isp.com",
+        SecureToken : "8ac173ba-f976-473f-a6b2-5e827305724f", //add your token here
+        To : 'abdulloh50007@gmail.com', 
+        From : "abdulloh50007@gmail.com",
         Subject : "This is the subject",
         Body : ebody
     }).then(
